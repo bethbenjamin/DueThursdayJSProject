@@ -1,0 +1,40 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<img src="~/Content/horse.png" />
+<script src="~/Scripts/JavaScript.js"></script>
+
+
+
+
+<!--the audio code on play AND onended function starts here-->
+<audio controls oncanplay="myFunction()" , onended="myFunctionEnd1()">
+
+
+    <source src="~/Content/horse.ogg" type="audio/ogg" />
+
+    Your browser does not support the audio element.
+</audio>
+<!--the audio code starter / ender function ends here-->
+
+
+<!--Response time starts here-->
+
+<p>Test your Response time!</p>
+Click on "Start" first, and wait until the background color changes.As soon as it changes, hit "stop!"
+
+
+<form name="response">
+    Change background color in:
+    <select name="bgColorChange">
+        <option selected>deeppink
+        <option>aliceblue
+        <option>crimson
+        <option>darkkhaki
+        <option>cadetblue
+
+    </select>
+    <input type="button" value="start" onClick="startit()">
+    <input type="button" value="stop" onClick="stopTest()">
+</form>
+
